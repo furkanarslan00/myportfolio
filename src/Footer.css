@@ -1,0 +1,30 @@
+.footer {
+  background-color: #040404;
+  color: #fff;
+  padding: 10px 0; /* Örneğin, yukarı ve aşağı yönlü 20 piksellik bir padding ekleyin */
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+  
+  .social-media {
+    margin-bottom: 0px;
+  }
+  
+  .social-icon {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+
+  .part1{
+    font-style: italic;
+  }

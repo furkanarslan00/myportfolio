@@ -1,0 +1,149 @@
+.picture-page {
+  background: linear-gradient(to right, #50075f, #8e1d74); /* Resim sayfasının arka plan rengini geçişli olarak ayarla */
+}
+
+
+.picture-container {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  height: auto;
+}
+
+.picture-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #000000;
+  background: linear-gradient(to left, #f1cb0f, #c6b114); /* Resim sayfasının arka plan rengini geçişli olarak ayarla */
+
+  display: block;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.contentt {
+  width: 100%; /* İçerik genişliği */
+  padding: 0px;
+}
+
+.music {
+  margin-top: 20px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.scroll-to-top button {
+  background-color: #542a2a;
+  color: #f3f1f1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.scroll-to-top button:hover {
+  background-color: #6e3939;
+}
+
+.scroll-to-top img {
+  width: 35px; /* Resmin genişliği */
+  height: 35px; /* Resmin yüksekliği */
+  cursor: pointer; /* Fareyi üstüne geldiğinde el işareti görünsün */
+  margin-right: 10px;
+}
+
+.scroll-to-top img:hover {
+  opacity: 0.7; 
+}
+
+.categoryy {
+  background: linear-gradient(to left, #812456, #dcbbbb); /* Geçişli arka plan rengini ayarla */
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.categoryy-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 sütunlu bir grid */
+  gap: 20px; /* İçerikler arasındaki boşluk */
+}
+
+@media (max-width: 3000px) {
+  .categoryy-img {
+    grid-template-columns: repeat(4, 1fr); /* Ekran genişliği 1200px'den küçük olduğunda 3 sütunlu grid */
+  }
+
+}
+
+
+@media (max-width: 1455px) {
+  .categoryy-img {
+    grid-template-columns: repeat(3, 1fr); /* Ekran genişliği 1200px'den küçük olduğunda 3 sütunlu grid */
+  }
+}
+
+@media (max-width: 1075px) {
+  .categoryy-img {
+    grid-template-columns: repeat(2, 1fr); /* Ekran genişliği 900px'den küçük olduğunda 2 sütunlu grid */
+  }
+}
+
+@media (max-width: 700px) {
+  .categoryy-img {
+    grid-template-columns: repeat(1, 1fr); /* Ekran genişliği 900px'den küçük olduğunda 2 sütunlu grid */
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+
+.categoryy-img img {
+  width: 100%; /* Resimleri genişliğe tam olarak uyumlu yapar */
+  height: auto; /* Otomatik yükseklik */
+  margin-top: 10px;
+}
+
+.categoryy h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  margin-top: 0px;
+  text-align: left;
+}
+ 
+.gallery-item {
+  width:275px !important; /* Resim ve videoların genişliği */
+  height: 375px !important; /* Resim ve videoların yüksekliği */
+  margin-left: 20px;
+}
+
+.gallery-item1 {
+  width: 300px !important; /* Resim ve videoların genişliği */
+  height: 275px !important; /* Resim ve videoların yüksekliği */
+  margin-left: 20px;
+
+}
+
+.gallery-item2 {
+  width: 300px !important; /* Resim ve videoların genişliği */
+  height: 300px !important; /* Resim ve videoların yüksekliği */
+  margin-left: 20px;
+
+}

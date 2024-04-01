@@ -1,0 +1,150 @@
+/* Music.css */
+
+.music-page {
+  background: linear-gradient(to right, #222222, #333333); /* Geçişli arka plan renkleri */
+}
+
+.music-container {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  height: auto;
+}
+
+.music-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #ffffff; /* Başlık metin rengi */
+  background: linear-gradient(to left, #aaaaaa, #444444); /* Geçişli kategori arka plan renkleri */
+  display: block;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.sidebarrr {
+  width: 95%;
+  padding: 10px;
+  background: #444444; /* Yan çubuk arka plan rengi */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-radius: 10px;
+  align-self: flex-start; /* Müzik kategorileri yazısının altında olmasını sağlar */
+}
+
+.sidebarrr ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Kategorileri yatay olarak gruplar */
+}
+
+.sidebarrr li {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px; /* Boşluk eklemek için sağ marj */
+  margin-left: 10px; /* Boşluk eklemek için sağ marj */
+  background-color: #c5c5c5; /* Yan çubuk öğelerinin arka plan rengi */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  flex: 1 0 calc(30% - 10px); /* Eşit genişlikte olmalarını sağlar ve 2 sütun oluşturur */
+  font-style: italic;
+}
+
+.sidebarrr li:nth-child(2n) {
+  margin-right: 10px; /* Her 2. öğeden sonra sağ marjı kaldırır */
+}
+
+.sidebarrr li:hover {
+  background: linear-gradient(to left, #aaaaaa, #444444); /* Geçişli kategori arka plan renkleri */
+}
+
+
+.contenttt {
+  width: 100%; /* İçerik genişliği */
+  padding: 0px;
+}
+
+
+.categoryyy {
+  background: linear-gradient(to right, #aaaaaa, #444444); /* Geçişli kategori arka plan renkleri */
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.categoryyy-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 sütunlu bir grid */
+  gap: 20px; /* İçerikler arasındaki boşluk */
+}
+
+@media (max-width: 1200px) {
+  .categoryyy-images {
+    grid-template-columns: repeat(3, 1fr); /* Ekran genişliği 1200px'den küçük olduğunda 3 sütunlu grid */
+  }
+}
+
+@media (max-width: 900px) {
+  .categoryyy-images {
+    grid-template-columns: repeat(1, 1fr); /* Ekran genişliği 900px'den küçük olduğunda 2 sütunlu grid */
+  }
+}
+
+
+.categoryyy-images iframe {
+  width: 100%; /* İframe'leri genişliğe tam olarak uyumlu yapar */
+  height: 185px; /* İframe yüksekliği */
+  margin-top: 10px;
+}
+
+.categoryyy h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  margin-top: 0px;
+  text-align: left;
+  font-style: italic;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.scroll-to-top button {
+  background-color: #333333; /* En üste git düğmesinin arka plan rengi */
+  color: #ffffff; /* En üste git düğmesinin metin rengi */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.scroll-to-top button:hover {
+  background-color: #444444; /* En üste git düğmesinin üzerine gelindiğinde arka plan rengi */
+}
+
+.scroll-to-top img {
+  width: 35px; /* Resmin genişliği */
+  height: 35px; /* Resmin yüksekliği */
+  cursor: pointer; /* Fareyi üstüne geldiğinde el işareti görünsün */
+  margin-right: 10px;
+}
+
+.scroll-to-top img:hover {
+  opacity: 0.7; /* Fare resmin üstüne geldiğinde opaklık azalsın */
+}
+
+.loading-message {
+  color: #fff;
+  font-style: italic;
+}

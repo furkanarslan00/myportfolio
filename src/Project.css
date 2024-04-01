@@ -1,0 +1,195 @@
+/* Project.css */
+
+.project-page {
+    background-color: #1c7dae; /* Proje sayfasının arka plan rengi */
+  }
+  
+  .project-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px; /* Navbar'ın yüksekliği */
+    height: auto;
+    background-size: 100% auto; /* Yalnızca genişlik ölçeklendirme */
+  }
+  
+  
+  .project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    background-image: linear-gradient(to right, rgba(142, 198, 250, 0.9), rgba(243, 243, 243, 0.9)); /* Açık süt mavisi tonları için geçiş */
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-style: italic;
+  }
+  
+  
+  .sidebar {
+    width: 70%;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(142, 198, 250, 0.9), rgba(243, 243, 243, 0.9)); /* Açık süt mavisi tonları için geçiş */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: auto; /* Sol kenarı otomatik olarak hizala */
+    margin-right: auto; /* Sağ kenarı otomatik olarak hizala */
+    font-style: italic ;
+  }
+  
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sidebar li {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-image: linear-gradient(to right, rgba(173, 216, 255, 0.9), rgba(204, 240, 255, 0.9)); /* Açık süt mavisi tonları için geçiş */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar li:hover {
+    background-image: linear-gradient(to right, rgba(173, 216, 255, 0.9), rgba(179, 224, 244, 0.9)); /* Açık süt mavisi tonları için geçiş */
+  }
+  
+  .content {
+    width: 100%;
+    padding: 0px;
+  }
+  
+  .category {
+    background-image: linear-gradient(to right, rgba(142, 198, 250, 0.9), rgba(184, 222, 240, 0.9)); /* Açık süt mavisi tonları için geçiş */
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+  
+  .category-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: #fff;
+  }
+
+  
+  @media (max-width: 1150px) {
+    .category-images {
+      grid-template-columns: repeat(1, 1fr);
+    }
+   
+  }
+
+  .category-images img {
+    display: block; /* Görüntüleri blok eleman olarak ayarla */
+    margin: 0 auto; /* Görüntüleri yatay olarak ortala */
+  }
+  
+  .category-images iframe {
+    width: 100%;
+    height: 185px;
+    margin-top: 10px;
+  }
+  
+  .category h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 0px;
+    text-align: left;
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .scroll-to-top button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .scroll-to-top button:hover {
+    background-color: #555;
+  }
+  
+  .scroll-to-top img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .scroll-to-top img:hover {
+    opacity: 0.7;
+  }
+  
+  .project-info {
+    margin-top: 20px;
+    color: #000; /* Yazı rengini siyah olarak ayarlayın */
+    font-style: italic;
+    text-align: left; /* Metni sola hizalayın */
+  }
+  
+  .project-info p {
+    margin: 25px 0;
+    
+  }
+  
+  .project-info a {
+    color: #000; /* Link rengini siyah olarak ayarlayın */
+    text-decoration: none;
+  }
+  
+  .project-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .bold-text {
+    font-weight: bold; /* Kalın font kullan */
+  }
+
+  .main-info-title {
+    background-color: rgba(24, 92, 156, 0.9);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .project-info-box {
+    background-image: linear-gradient(to right, rgba(23, 94, 160, 0.9), rgba(204, 240, 255, 0.9));
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .mini-box {
+    background-color: #204c89;  
+    border-radius: 10px;
+    padding: 7px;
+    margin-left: 5px;
+    color: #fff;
+    display: inline-block; /* Kutunun satır içi blok olarak görüntülenmesini sağlar */
+    vertical-align: middle; /* Dikey hizalamayı ortala */
+  }
+  
+  

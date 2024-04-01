@@ -1,0 +1,373 @@
+.home-page {
+    background-color: #000000; /* Yeni arka plan rengi */
+}
+
+.home-container {
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    background-size: 100% auto;
+}
+
+.home-title {
+    text-align: right;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ec8f03;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-style: italic;
+    margin-top: 70px;
+    margin-left: 5%;
+    background-image: linear-gradient(to right, #0de0c8, #79ea1d); /* İlk renginizden ikinci rengine geçiş */
+    -webkit-background-clip: text; /* Metni arka planla aynı renkte boyar */
+    background-clip: text; /* Metni arka planla aynı renkte boyar */
+    color: transparent; /* Metni saydam yapar */
+    animation: slideRight 2s ease infinite alternate; /* Animasyonu uygula */
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(0px); /* Başlangıç pozisyonu */
+    }
+    to {
+        transform: translateX(10px); /* Bitiş pozisyonu */
+    }
+}
+
+
+.home-content {
+    width: 100%;
+    padding: 0px;
+    margin-top: 200px;
+}
+
+.home-category {
+    background-image: linear-gradient(to left, rgba(170, 140, 110, 0.9), rgba(184, 240, 208, 0.9)); /* Yeni kategori arka planı */
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    font-style: italic;
+
+}
+
+.home-category-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: #fff;
+}
+
+@media (max-width: 1150px) {
+    .home-category-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.home-category-content {
+    margin-top: 20px;
+    color: #000;
+    font-style: italic;
+    text-align: left;
+}
+
+.home-category h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.home-scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.home-scroll-to-top button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.home-scroll-to-top button:hover {
+    background-color: #555;
+}
+
+.home-scroll-to-top img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.home-scroll-to-top img:hover {
+    opacity: 0.7;
+}
+
+.home-project-info {
+    margin-top: 20px;
+    color: #000; /* Yazı rengini siyah olarak ayarlayın */
+    font-style: italic;
+    text-align: left; /* Metni sola hizalayın */
+}
+
+.home-project-info p {
+    margin: 25px 0;
+}
+
+.home-project-info a {
+    color: #000; /* Link rengini siyah olarak ayarlayın */
+    text-decoration: none;
+}
+
+.home-project-info a:hover {
+    text-decoration: underline;
+}
+
+.home-bold-text {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .home-boldd-text {
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 0; /* İkinci paragrafın alt boşluğunu kaldırır */
+
+  }
+  
+  .home-bolddd-text {
+    font-size: 15px;
+    color: #000000; /* Opsiyonel: Daha az vurgulu bir renk kullanmak isterseniz */
+    margin-bottom: 0; /* İkinci paragrafın alt boşluğunu kaldırır */
+    display: inline-block; /* İkinci paragrafın alt boşluğunu kaldırır */
+
+  }
+  
+
+.home-main-info-title {
+    background-color: rgba(35, 33, 29, 0.9);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.home-project-info-box {
+    background-image: linear-gradient(to right, rgba(255, 153, 51, 0.9), rgba(184, 240, 208, 0.9)); /* Yeni kategori arka planı */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+  
+
+.home-profile-image-container {
+    position: relative;
+    
+}
+
+.home-profile-image {
+    height: 100%;
+    max-width: 70%; /* Maksimum genişliği %70 olarak ayarlayın */
+    height: auto;
+    margin: 0 auto; /* Resmi yatayda ortala */
+    float: none; /* Resmi sıfırla */
+    display: block; /* Resmi blok element yaparak sağa yerleştirin */
+    margin-left: 0; /* Sağdan boşluk bırakmayın */
+    background-color: #000; /* Arka plan rengini simsiyah yapın */
+}
+
+.normal-font {
+    font-weight: normal;
+}
+
+.personal-info-icon {
+    width: 25px; /* İkon genişliği */
+    height: 25px; /* İkon yüksekliği */
+    vertical-align: middle; /* İkonu dikeyde metnin ortasına hizalar */
+
+  }
+
+  .info-text {
+    margin-left: 10px; /* Yazıyı sağa kaydırma miktarını ayarlar */
+    color: #000;
+  }
+
+  .personal-info-container {
+    display: flex; /* İç içe geçmiş öğeleri yatay hizalar */
+    flex-direction: column; /* İç içe geçmiş öğeleri dikey olarak hizalar */
+    align-items: flex-start; /* Öğeleri sol tarafa hizalar */
+
+  }
+  
+  .personal-info-item {
+    margin-bottom: 10px; /* Her bir öğe arasına 10 piksel boşluk bırakır */
+  }
+  
+
+  .pc-content {
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+}
+  
+.pc-category {
+    background-image: url('https://www.yazilimturkiye.com/wp-content/uploads/2019/08/yazilim_icin_bilgisayar.jpg');
+    background-size: cover; /* Arka plan resmini kaplamak için */
+    background-position: center; /* Arka plan resmini ortalamak için */
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.pc-category-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: #fff;
+    justify-items: center; /* Yuvarlakları yatayda ortala */
+}
+@media (max-width: 768px) {
+    .pc-category-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 359px) {
+    .pc-category-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.pc-category-title {
+    background-image: linear-gradient(to right, rgb(167, 163, 163), rgb(205, 202, 200));
+    color: #181717;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skills-item {
+    position: relative; /* Göreceli konumlandırma ekleyin */
+    width: 135px; /* Yuvarlak genişliği */
+    height: 135px; /* Yuvarlak yüksekliği */
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px; /* Metin boyutu */
+    font-weight: bold;
+    overflow: hidden; /* İçerik dışarı taşıyorsa kırpın */
+    margin-bottom: 30px;
+
+}
+
+
+
+
+
+
+
+
+.contact-content {
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+}
+  
+.contact-category {
+    background-image: linear-gradient(to left, rgba(170, 140, 110, 0.9), rgba(184, 240, 208, 0.9));
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.contact-category-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: #fff;
+    justify-items: center;
+}
+@media (max-width: 768px) {
+    .contact-category-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+
+.contact-category-title {
+    background-image: linear-gradient(to right, rgb(43, 42, 42), rgb(38, 37, 36));
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info input,
+.contact-info textarea {
+    width: 275px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-info textarea {
+    height: 150px;
+}
+
+.sumbit {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 70%; /* %90 genişlik */
+}
+
+.sumbit:hover {
+    background-color: #45a049;
+}
