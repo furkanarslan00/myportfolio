@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Footer'a uygulayacağınız stilleri içeren CSS dosyasını import edin
+import './Footer.css'; 
 import instagram from './Icons/Instagram.gif';
 import github from './Icons/Github.gif';
 import linkedin from './Icons/Linkedin.gif';

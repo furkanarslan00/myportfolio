@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './Home.css'; // Home.css stil dosyasını burada kullanıyoruz
+import './Home.css'; 
 import furkanarslanpc from './meapc.jpg';
 import furkanarslanmobil from './meamobil.jpg';
-import WaveProgressBar from './WaveProgressBar'; // WaveProgressBar bileşenini içeri aktarın
+import WaveProgressBar from './WaveProgressBar'; 
 
 const Home = () => {
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
@@ -20,7 +20,6 @@ const Home = () => {
     e.preventDefault();
     const mailtoLink = `mailto:furkan0tr0arslan@gmail.com?subject=New Message from ${name}&body=${message}`;
     window.location.href = mailtoLink;
-    // E-posta gönderildikten sonra formları sıfırla
     setName('');
     setEmail('');
     setMessage('');
@@ -43,9 +42,9 @@ const Home = () => {
     setImageSource(source);
   }, [windowWidth]);
 
-  const skills = ['HTML5 & CSS3', 'Java', 'JavaScript', 'Python', 'SRS Doc.', 'SQL']; // Computer Skills bölümünde gösterilecek becerilerin listesi
+  const skills = ['HTML5 & CSS3', 'Java', 'JavaScript', 'Python', 'SRS Doc.', 'SQL']; 
 
-  const percentValues = [90, 85, 80, 75, 85, 70]; // Farklı yüzdelik değerlerini içeren bir dizi
+  const percentValues = [95, 85, 90, 80, 85, 75]; 
 
   return (
     <div className="home-page">
@@ -68,7 +67,7 @@ const Home = () => {
               <div className="home-project-info-box">
                 <h4 className="home-main-info-title">About Me</h4>
                 <div className="home-project-info">
-                  <p>&nbsp;&nbsp;&nbsp;Hello, I am Furkan Arslan, I am a 3rd year Software Engineering student. I aim to be a problem-solving software engineer specializing in programming, data structures, web development and software design. I strive to strengthen my goal of providing effective solutions to real-world problems every day.</p>
+                  <p>&nbsp;&nbsp;&nbsp;Hello, I'm Furkan Arslan, a 4th-year Software Engineering student. My focus is on becoming a problem-solving software engineer with expertise in programming, data structures, web development, and software design. I'm dedicated to enhancing my skills daily to provide innovative and effective solutions to real-world challenges.</p>
                 </div>
               </div>
               <div className="home-project-info-box">
@@ -80,7 +79,7 @@ const Home = () => {
                       alt="İkon"
                       className="personal-info-icon"
                     />
-                    <span className="info-text">Biga, Canakkale, Turkey</span>
+                    <span className="info-text">Canakkale, Turkey</span>
                   </div>
                   <div className="personal-info-item">
                     <img
@@ -134,7 +133,7 @@ const Home = () => {
                 <h4 className="home-main-info-title">Education</h4>
                 <div className="home-project-info">
                   <p><span className="home-bold-text">Cankaya University</span></p>
-                  <p style={{ margin: 0 }}><span className="home-boldd-text">Software Engineering 3rd Class</span></p>
+                  <p style={{ margin: 0 }}><span className="home-boldd-text">Software Engineering 4th Class</span></p>
                   <p style={{ margin: 0 }}><span className="home-bolddd-text"> · [2020-Current]</span></p>
                   <p style={{ margin: 0 }}><span className="home-bolddd-text">· Final Grade: GPA: 2.90/4.0</span></p>
                 </div>
@@ -198,9 +197,8 @@ const Home = () => {
 
 
           <div className="scroll-to-top" onClick={scrollTop}>
-            {/* "En üste git" butonunu img öğesiyle değiştirme */}
             <img
-              src="https://izmirvitray.com.tr/images/top.png" // Resmin dosya yolunu buraya ekleyin
+              src="https://izmirvitray.com.tr/images/top.png" 
               alt="En Üste Git"
               className="scroll-to-top-button"
             />

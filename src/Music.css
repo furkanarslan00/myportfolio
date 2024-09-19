@@ -1,7 +1,7 @@
 /* Music.css */
 
 .music-page {
-  background: linear-gradient(to right, #222222, #333333); /* Geçişli arka plan renkleri */
+  background: linear-gradient(to right, #222222, #333333); 
 }
 
 .music-container {
@@ -16,7 +16,7 @@
   font-weight: bold;
   margin-bottom: 0px;
   color: #ffffff; /* Başlık metin rengi */
-  background: linear-gradient(to left, #aaaaaa, #444444); /* Geçişli kategori arka plan renkleri */
+  background: linear-gradient(to left, #aaaaaa, #444444); 
   display: block;
   border-radius: 12px;
   padding: 10px 20px;
@@ -27,50 +27,50 @@
 .sidebarrr {
   width: 95%;
   padding: 10px;
-  background: #444444; /* Yan çubuk arka plan rengi */
+  background: #444444; 
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
   border-radius: 10px;
-  align-self: flex-start; /* Müzik kategorileri yazısının altında olmasını sağlar */
+  align-self: flex-start; 
 }
 
 .sidebarrr ul {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Kategorileri yatay olarak gruplar */
+  flex-wrap: wrap; 
 }
 
 .sidebarrr li {
   cursor: pointer;
   padding: 10px;
   margin-bottom: 20px;
-  margin-right: 10px; /* Boşluk eklemek için sağ marj */
-  margin-left: 10px; /* Boşluk eklemek için sağ marj */
-  background-color: #c5c5c5; /* Yan çubuk öğelerinin arka plan rengi */
+  margin-right: 10px; 
+  margin-left: 10px; 
+  background-color: #c5c5c5;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  flex: 1 0 calc(30% - 10px); /* Eşit genişlikte olmalarını sağlar ve 2 sütun oluşturur */
+  flex: 1 0 calc(30% - 10px); 
   font-style: italic;
 }
 
 .sidebarrr li:nth-child(2n) {
-  margin-right: 10px; /* Her 2. öğeden sonra sağ marjı kaldırır */
+  margin-right: 10px; 
 }
 
 .sidebarrr li:hover {
-  background: linear-gradient(to left, #aaaaaa, #444444); /* Geçişli kategori arka plan renkleri */
+  background: linear-gradient(to left, #aaaaaa, #444444); 
 }
 
 
 .contenttt {
-  width: 100%; /* İçerik genişliği */
+  width: 100%; 
   padding: 0px;
 }
 
 
 .categoryyy {
-  background: linear-gradient(to right, #aaaaaa, #444444); /* Geçişli kategori arka plan renkleri */
+  background: linear-gradient(to right, #aaaaaa, #444444); 
   border-radius: 8px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -81,26 +81,26 @@
 
 .categoryyy-images {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 sütunlu bir grid */
-  gap: 20px; /* İçerikler arasındaki boşluk */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
 }
 
 @media (max-width: 1200px) {
   .categoryyy-images {
-    grid-template-columns: repeat(3, 1fr); /* Ekran genişliği 1200px'den küçük olduğunda 3 sütunlu grid */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (max-width: 900px) {
   .categoryyy-images {
-    grid-template-columns: repeat(1, 1fr); /* Ekran genişliği 900px'den küçük olduğunda 2 sütunlu grid */
+    grid-template-columns: repeat(1, 1fr); 
   }
 }
 
 
 .categoryyy-images iframe {
-  width: 100%; /* İframe'leri genişliğe tam olarak uyumlu yapar */
-  height: 185px; /* İframe yüksekliği */
+  width: 100%; 
+  height: 185px; 
   margin-top: 10px;
 }
 
@@ -121,8 +121,8 @@
 }
 
 .scroll-to-top button {
-  background-color: #333333; /* En üste git düğmesinin arka plan rengi */
-  color: #ffffff; /* En üste git düğmesinin metin rengi */
+  background-color: #333333; 
+  color: #ffffff; 
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -130,18 +130,18 @@
 }
 
 .scroll-to-top button:hover {
-  background-color: #444444; /* En üste git düğmesinin üzerine gelindiğinde arka plan rengi */
+  background-color: #444444; 
 }
 
 .scroll-to-top img {
-  width: 35px; /* Resmin genişliği */
-  height: 35px; /* Resmin yüksekliği */
-  cursor: pointer; /* Fareyi üstüne geldiğinde el işareti görünsün */
+  width: 35px; 
+  height: 35px; 
+  cursor: pointer; 
   margin-right: 10px;
 }
 
 .scroll-to-top img:hover {
-  opacity: 0.7; /* Fare resmin üstüne geldiğinde opaklık azalsın */
+  opacity: 0.7; 
 }
 
 .loading-message {

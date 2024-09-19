@@ -75,7 +75,6 @@ const Music = () => {
 
   const [videosLoaded, setVideosLoaded] = useState(false);
 
-  // Tüm videolar yüklendiğinde bu işlevi çağırır
   const handleVideosLoaded = () => {
     setVideosLoaded(true);
   };
@@ -120,7 +119,7 @@ const Music = () => {
                       height="300"
                       frameBorder="0"
                       allowFullScreen
-                      onLoad={handleVideosLoaded} // Her video yüklendiğinde bu işlevi çağırır
+                      onLoad={handleVideosLoaded} 
                     />
                   ))}
                 </div>

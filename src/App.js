@@ -18,9 +18,7 @@ const App = () => {
         <Navbar />
         <main>
           <Routes>
-            {/* Ana sayfa için /myportfolio adresine yönlendirme */}
             <Route path="/" element={<Home />} />
-            {/* Diğer sayfalar */}
             <Route path="/myportfolio" element={<Home />} />
             <Route path="/Music" element={<Music />} />
             <Route path="/Picture" element={<Picture />} />

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './WaveProgressBar.css'; // CSS dosyasını içeri aktarın
+import './WaveProgressBar.css'; 
 
 const WaveProgressBar = ({ percent, children }) => {
   const [fillPercent, setFillPercent] = useState(0);
@@ -35,7 +35,7 @@ const WaveProgressBar = ({ percent, children }) => {
           <path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"></path>
         </svg>
       </div>
-      <div className="skills-text">{children}</div> {/* Bileşenin içeriğini yani beceri ismini burada göster */}
+      <div className="skills-text">{children}</div> 
     </div>
   );
 };

@@ -1,11 +1,9 @@
 import React from 'react';
 import CVimage from './CVimage.jpg';
-import './CV.css'; // CSS dosyasını içe aktar
+import './CV.css'; 
 
 function CV() {
-    // Resmi indirmek için işlev
     const downloadCV = () => {
-        // Resim dosyasını indirmek için bir link oluştur
         const link = document.createElement('a');
         link.href = CVimage;
         link.download = 'Furkan Arslan_CV.jpg';

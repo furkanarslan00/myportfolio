@@ -1,73 +1,67 @@
-/* İç çerçeve stilleri */
 .ozel-container {
     position: relative;
     text-align: center;
-    background: linear-gradient(to right, #d2cda3, #dedad0); /* Geçişli arka plan */
-    margin: auto; /* Dikey hizalama */
-    width: 100%; /* Ekran genişliğini tamamen kapsayacak şekilde ayarla */
-    max-width: 80%; /* Maksimum genişlik, ekran genişliğinin %80'i kadar */
-    padding: 20px; /* İçerik boşluğu */
-    border: 50px inset rgb(179, 171, 127); /* İç çerçeve */
+    background: linear-gradient(to right, #d2cda3, #dedad0); 
+    margin: auto; 
+    width: 100%; 
+    max-width: 80%; 
+    padding: 20px; 
+    border: 50px inset rgb(179, 171, 127); 
 }
 
-/* Dış çerçeve stilleri */
 .outer-wrapper {
-    background: linear-gradient(to right, #bcbf83, #dedad0); /* Geçişli arka plan */
-    max-width: 100%; /* Maksimum genişlik %100 */
-    overflow: hidden; /* Taşan içerikleri gizle */
-    padding: 20px; /* İçerik boşluğu */
-    margin: 64px auto 0; /* Dikey hizalama ve alt kenarlık (beyaz alan) yok */
-    border: 50px inset rgb(179, 171, 127); /* Dış çerçeve */
+    background: linear-gradient(to right, #bcbf83, #dedad0); 
+    max-width: 100%; 
+    overflow: hidden; 
+    padding: 20px; 
+    margin: 64px auto 0; 
+    border: 50px inset rgb(179, 171, 127); 
     height: auto;
 }
 
-/* Ekran boyutuna göre border'ı gizle */
 @media (max-width: 1455px) {
     .outer-wrapper {
-        border: none; /* Border'ı gizle */
+        border: none; 
     }
 }
 
-/* Ekran genişliği 793px'den küçük olduğunda iç çerçevenin genişliğini tamamen kapsayacak şekilde ayarla */
 @media (max-width: 793px) {
     .outer-wrapper {
-        border: none; /* Border'ı gizle */
+        border: none; 
     }
     .ozel-container {
-        max-width: none; /* Maksimum genişliği kaldır */
-        width: calc(100% - 40px); /* Ekran genişliğine göre ayarla */
-        margin-left: 20px; /* Sol kenardan boşluk bırak */
-        margin-right: 20px; /* Sağ kenardan boşluk bırak */
+        max-width: none; 
+        width: calc(100% - 40px); 
+        margin-left: 20px; 
+        margin-right: 20px;
     }
 
     body {
-        overflow-x: hidden; /* Yatay kaydırmayı devre dışı bırak */
+        overflow-x: hidden; 
         background-color: #000000;
-        margin-bottom: -50px; /* Alt kenarlık margin'ini azalt */
-        padding-bottom: 50px; /* Alt kenarlık padding'ini azalt */
+        margin-bottom: -50px;
+        padding-bottom: 50px; 
     }
 }
 
-/* Resmi aşağıya indir */
 .img-fluid {
     margin-top: 40px;
-    max-width: 90%; /* Resmin maksimum genişliği %100 olacak şekilde ayarlanacak */
-    height: auto; /* Yükseklik otomatik olarak ayarlanacak */
+    max-width: 90%; 
+    height: auto; 
 }
 
-/* İndirme butonu stilleri */
 .download-button {
     height: 30%;
     width: 45%;
     padding: 10px 20px;
-    background: linear-gradient(to right, #676238, #7a742b); /* Geçişli arka plan */
+    background: linear-gradient(to right, #676238, #7a742b); 
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Geçiş efekti */
+    transition: background-color 0.3s ease;
 }
 
 .download-button:hover {
-    background: linear-gradient(to left, #6e6a33, #73704b); /* Hover durumunda geçişli arka plan rengini değiştir */
+    background: linear-gradient(to left, #6e6a33, #73704b);
 }

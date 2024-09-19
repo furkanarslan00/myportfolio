@@ -1,6 +1,6 @@
 import React,{ useRef, useEffect  } from 'react';
 import './Picture.css';
-import Song from './song.mp3'; // Şarkı dosyasını içe aktarın
+import Song from './song.mp3'; 
 import dikey1 from './MyGallery/Dikey/dikey1.jpg';
 import dikey2 from './MyGallery/Dikey/dikey2.jpg';
 import dikey3 from './MyGallery/Dikey/dikey3.jpg';
@@ -73,7 +73,7 @@ const Picture = () => {
 
   const handleVideoPause = () => {
     if (audioRef.current) {
-      audioRef.current.play(); // Duraklatmak için pause() fonksiyonunu çağırın
+      audioRef.current.play(); 
     }
   };
   
@@ -120,8 +120,7 @@ const Picture = () => {
         <div className="picture-container">
           <h2 className="picture-title">My Gallery</h2>
           <div className="music">
-            <p>Let Me Down Slowly</p> {/* Let Me Down Slowly yazısı */}
-            {/* Müzik çalma ekranı */}
+            <p>Let Me Down Slowly</p> 
             <audio ref={audioRef} controls>
               <source src={Song} type="audio/mpeg" />
               Your browser does not support the audio element.
@@ -243,9 +242,8 @@ const Picture = () => {
             ))}
           </div>
           <div className="scroll-to-top" onClick={scrollTop}>
-            {/* "En üste git" butonunu img öğesiyle değiştirme */}
             <img
-              src="https://izmirvitray.com.tr/images/top.png" // Resmin dosya yolunu buraya ekleyin
+              src="https://izmirvitray.com.tr/images/top.png" 
               alt="En Üste Git"
               className="scroll-to-top-button"
             />

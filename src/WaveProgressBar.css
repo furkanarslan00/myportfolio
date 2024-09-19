@@ -35,7 +35,7 @@
     transform: translate(0, 100%);
     background: #4d6de3;
     transition: all 0.3s;
-    overflow: visible; /* Dalga efektinin sınırlarını aşmasına izin vermek için */
+    overflow: visible;
   }
   
 
@@ -76,6 +76,6 @@
     text-align: center;
     color: #020438;
     font-size: 17px;
-    position: relative; /* Metni diğer öğelerin üzerine getirmek için */
-    z-index: 1; /* Metnin diğer öğelerin üzerine gelmesini sağlar */
+    position: relative; 
+    z-index: 1; 
 }
