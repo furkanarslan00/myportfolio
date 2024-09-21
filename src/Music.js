@@ -19,10 +19,10 @@ const Music = () => {
       id: 'Hiphop', 
       name: 'Hiphop Music',
       music: [
-        { id: 1, src: 'https://www.youtube.com/embed/RnH2A8gjFp4', title: 'Hiphop Music 1' },
+        { id: 1, src: 'https://www.youtube.com/embed/hsu0rtpCtc0', title: 'Hiphop Music 1' },
         { id: 2, src: 'https://www.youtube.com/embed/RBMihYL90UY', title: 'Hiphop Music 2' },
         { id: 3, src: 'https://www.youtube.com/embed/7I-jmjw7C0E', title: 'Hiphop Music 3' },
-        { id: 4, src: 'https://www.youtube.com/embed/oGI0JtsfHx4', title: 'Hiphop Music 4' },
+        { id: 4, src: 'https://www.youtube.com/embed/RnH2A8gjFp4', title: 'Hiphop Music 4' },
         { id: 5, src: 'https://www.youtube.com/embed/3GiO2hfzbZY', title: 'Hiphop Music 5' },
         { id: 6, src: 'https://www.youtube.com/embed/PUiNB0UFwJM', title: 'Hiphop Music 6' },
         { id: 7, src: 'https://www.youtube.com/embed/H5NA_UTSYeE', title: 'Hiphop Music 7' },
@@ -34,17 +34,17 @@ const Music = () => {
       name: 'Slow Music',
       music: [
         { id: 1, src: 'https://www.youtube.com/embed/xrpasFa2tIQ', title: 'Slow Music 1' },
-        { id: 2, src: 'https://www.youtube.com/embed/3J9n-Uc3FVU', title: 'Slow Music 2' },
-        { id: 3, src: 'https://www.youtube.com/embed/Pl7--yxZjng', title: 'Slow Music 3' },
+        { id: 2, src: 'https://www.youtube.com/embed/Pl7--yxZjng', title: 'Slow Music 2' },
+        { id: 3, src: 'https://www.youtube.com/embed/QeCAPkTHOto', title: 'Slow Music 3' },
       ]
     },
     { 
       id: 'Pop', 
       name: 'Pop Music',
       music: [
-        { id: 1, src: 'https://www.youtube.com/embed/G0igyZgfr0M', title: 'Pop Music 1' },
+        { id: 1, src: 'https://www.youtube.com/embed/OKkVPUz5bUE', title: 'Pop Music 1' },
         { id: 2, src: 'https://www.youtube.com/embed/Iz_DvG2nui0', title: 'Pop Music 2' },
-        { id: 3, src: 'https://www.youtube.com/embed/KAbQaTea0bU', title: 'Pop Music 3' },
+        { id: 3, src: 'https://www.youtube.com/embed/oDQ5tEkOicg', title: 'Pop Music 3' },
       ]
     },
     { 
