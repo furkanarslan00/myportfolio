@@ -62,6 +62,43 @@ import dikey34 from './MyGallery/Dikey/dikey34.jpg';
 import dikey35 from './MyGallery/Dikey/dikey35.jpg';
 import dikey36 from './MyGallery/Dikey/dikey36.jpg';
 
+
+import v2 from './MyGallery/v2/2.jpg';
+import v3 from './MyGallery/v2/3.jpg';
+import v4 from './MyGallery/v2/4.mp4';
+import v5 from './MyGallery/v2/5.mp4';
+import v6 from './MyGallery/v2/6.jpg';
+import v7 from './MyGallery/v2/7.jpg';
+import v8 from './MyGallery/v2/8.jpg';
+import v9 from './MyGallery/v2/9.mp4';
+import v10 from './MyGallery/v2/10.jpg';
+import v11 from './MyGallery/v2/11.jpg';
+import v12 from './MyGallery/v2/12.mp4';
+import v13 from './MyGallery/v2/13.mp4';
+import v14 from './MyGallery/v2/14.jpg';
+import v15 from './MyGallery/v2/15.mp4';
+import v16 from './MyGallery/v2/16.jpg';
+import v17 from './MyGallery/v2/17.mp4';
+import v18 from './MyGallery/v2/18.jpg';
+import v19 from './MyGallery/v2/19.mp4';
+import v20 from './MyGallery/v2/20.jpg';
+import v21 from './MyGallery/v2/21.mp4';
+import v22 from './MyGallery/v2/22.jpg';
+import v23 from './MyGallery/v2/23.mp4';
+import v24 from './MyGallery/v2/24.jpg';
+import v25 from './MyGallery/v2/25.mp4';
+import v26 from './MyGallery/v2/26.jpg';
+import v27 from './MyGallery/v2/27.mp4';
+import v28 from './MyGallery/v2/28.jpg';
+import v29 from './MyGallery/v2/29.mp4';
+import v30 from './MyGallery/v2/30.jpg';
+import v31 from './MyGallery/v2/31.mp4';
+import v32 from './MyGallery/v2/32.jpg';
+import v33 from './MyGallery/v2/33.mp4';
+import v34 from './MyGallery/v2/34.jpg';
+import v35 from './MyGallery/v2/35.jpg';
+import v36 from './MyGallery/v2/36.jpg';
+
 const Picture = () => {
   const audioRef = useRef(null);
 
@@ -98,7 +135,7 @@ const Picture = () => {
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.08;
+      audioRef.current.volume = 0.07;
     }
   }, []);
 
@@ -130,6 +167,91 @@ const Picture = () => {
             {categories.map((category) => (
               <div id={category.id} className="categoryy" key={category.id}>
                 <div className="categoryy-img">              
+                  
+                   {/* V2 */}
+
+                   <img src={v36} alt="Image" className="gallery-item" />
+                   <img src={v35} alt="Image" className="gallery-item" />
+                   <img src={v34} alt="Image" className="gallery-item" />
+                   <video controls className="gallery-item" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v33} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <img src={v32} alt="Image" className="gallery-item2" />
+                   <video controls className="gallery-item2" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v31} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <img src={v30} alt="Image" className="gallery-item2" />
+                   <video controls className="gallery-item2" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v29} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <img src={v28} alt="Image" className="gallery-item2" />
+                   <video controls className="gallery-item2" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v27} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <img src={v26} alt="Image" className="gallery-item2" />
+                   <video controls className="gallery-item2" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v25} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <img src={v24} alt="Image" className="gallery-item2" />
+                   <video controls className="gallery-item2" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v23} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <img src={v22} alt="Image" className="gallery-item2" />
+                   <video controls className="gallery-item2" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v21} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <img src={v20} alt="Image" className="gallery-item2" />
+                   <video controls className="gallery-item2" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v19} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <img src={v18} alt="Image" className="gallery-item2" />
+                   <video controls className="gallery-item2" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v17} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <img src={v16} alt="Image" className="gallery-item" />
+                   <video controls className="gallery-item" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v15} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <img src={v14} alt="Image" className="gallery-item" />
+                   <video controls className="gallery-item" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v13} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <video controls className="gallery-item2" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v12} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                  <img src={v11} alt="Image" className="gallery-item2" />
+                  <img src={v10} alt="Image" className="gallery-item2" />
+                   <video controls className="gallery-item2" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v9} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> 
+                   <img src={v8} alt="Image" className="gallery-item2" />
+                   <img src={v7} alt="Image" className="gallery-item" />
+                   <img src={v6} alt="Image" className="gallery-item" />
+                   <video controls className="gallery-item" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v5} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>  
+                   <video controls className="gallery-item" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v4} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>  
+                   <img src={v3} alt="Image" className="gallery-item" />
+                   <img src={v2} alt="Image" className="gallery-item" />
+          
+
                    {/* 1.Dikey Section */}
 
                   <img src={dikey1} alt="Image" className="gallery-item" />
@@ -235,6 +357,7 @@ const Picture = () => {
                   <img src={dikey34} alt="Image" className="gallery-item" />
                   <img src={dikey35} alt="Image" className="gallery-item" />
                   <img src={dikey36} alt="Image" className="gallery-item" />
+      
 
                
                 </div>
