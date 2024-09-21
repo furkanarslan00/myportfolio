@@ -62,7 +62,7 @@ import dikey34 from './MyGallery/Dikey/dikey34.jpg';
 import dikey35 from './MyGallery/Dikey/dikey35.jpg';
 import dikey36 from './MyGallery/Dikey/dikey36.jpg';
 
-
+import v1 from './MyGallery/v2/1.mp4';
 import v2 from './MyGallery/v2/2.jpg';
 import v3 from './MyGallery/v2/3.jpg';
 import v4 from './MyGallery/v2/4.mp4';
@@ -250,7 +250,10 @@ const Picture = () => {
                   </video>  
                    <img src={v3} alt="Image" className="gallery-item" />
                    <img src={v2} alt="Image" className="gallery-item" />
-          
+                   <video controls className="gallery-item" onPlay={handleVideoPlay} onPause={handleVideoPause}>
+                    <source src={v1} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>  
 
                    {/* 1.Dikey Section */}
 
