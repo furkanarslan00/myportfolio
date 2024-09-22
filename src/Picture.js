@@ -237,7 +237,7 @@ const Picture = () => {
                     <source src={v9} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video> 
-                   <img src={v8} alt="Image" className="gallery-item2" />
+                   <img src={v8} alt="Image" className="gallery-item" />
                    <img src={v7} alt="Image" className="gallery-item" />
                    <img src={v6} alt="Image" className="gallery-item" />
                    <video controls className="gallery-item" onPlay={handleVideoPlay} onPause={handleVideoPause}>
